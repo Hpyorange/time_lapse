@@ -25,8 +25,8 @@ function MemberHeader () {
               navigate("/login");
               break;
             default:
-              alert("Oops, something went wrong!");
-              break;
+              console.log(`Error: HTTP status ${status}`);
+            break;
           }
       
           console.log("This is userName", userName);
